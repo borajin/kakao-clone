@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats | Kakao Clone</title>
-    <script
-      src="https://kit.fontawesome.com/57035f1d97.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="status-bar">
@@ -42,18 +40,23 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__colum">
-            <img class="chat__avatar g-avatar" src="images/avatar.png" />
-            <div class="chat__content">
-              <span class="chat__username">
-                Lynn
-              </span>
-              <span class="chat__preview">Going home</span>
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img src="images/avatar.png" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Goru
+                  </span>
+                  <span class="friend__bottom-text">
+                    Goru here
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+              <span class="chat__timestamp">March 8</span>
             </div>
           </div>
-          <div class="chat__column">
-            <span class="chat_timestamp">Yesterday</span>
-          </div>
+        </div>
         </a>  
         </li>
       </ul>
@@ -67,6 +70,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>

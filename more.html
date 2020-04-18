@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More | Kakao Clone</title>
-    <script
-      src="https://kit.fontawesome.com/57035f1d97.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -40,9 +41,9 @@
     </header>
     <main class="more">
       <header class="more__header">
-        <dic class="friends__friend friend friend--lg">
+        <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/avatar.png" class="g-avatar friend__avatar" />
+            <img src="images/avatar.png" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Jin bora
@@ -55,41 +56,54 @@
           <div class="friend__column">
             <i class="far fa-comment-alt fa-2x"></i>
           </div>
-          <ul class="more__btn-list">
-            <li class="more__btn"><span class="more__btn-icon">
+        </div>
+        <ul class="more__btn-list">
+          <li class="more__btn">
+            <span class="more__btn-icon">
               <i class="far fa-smile fa-2x"></i>
             </span>
             <span class="more__btn-title">
               Emoticons
             </span>
-            <li class="more__btn"><span class="more__btn-icon">
+          </li>
+
+          <li class="more__btn">
+            <span class="more__btn-icon">
               <i class="fas fa-brush fa-2x"></i>
             </span>
             <span class="more__btn-title">
               Themes
             </span>
-            <li class="more__btn"><span class="more__btn-icon">
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
               <i class="fab fa-kickstarter-k fa-2x"></i>
             </span>
             <span class="more__btn-title">
               Account
             </span>
           </li>
-          </ul>
+        </ul>
       </header>
       <section class="more__suggestions">
         <h5 class="more__title">Suggestions</h5>
         <ul class="more__suggestions-list">
           <li class="more__suggestion suggestion">
-            <i class="fas fa-quote-right fa-2x"></i>
+            <span class="suggestion__icon"
+              ><i class="fas fa-quote-right fa-2x"></i
+            ></span>
             <span class="suggestion__title">Kakao Story</span>
           </li>
           <li class="more__suggestion suggestion">
-           <i class="fas fa-beer fa-2x"></i>
+            <span class="suggestion__icon"
+              ><i class="fas fa-beer fa-2x"></i
+            ></span>
             <span class="suggestion__title">Kakao friends</span>
           </li>
           <li class="more__suggestion suggestion">
-            <i class="fas fa-gamepad fa-2x"></i>
+            <span class="suggestion__icon"
+              ><i class="fas fa-gamepad fa-2x"></i
+            ></span>
             <span class="suggestion__title">Friends Gem</span>
           </li>
         </ul>
@@ -103,8 +117,9 @@
           ></a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link"
-            ><i class="far fa-comment"></i
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
+            <i class="far fa-comment"></i
           ></a>
         </li>
         <li class="nav__list-item">

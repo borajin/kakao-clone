@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat | Kakao Clone</title>
-    <script
-      src="https://kit.fontawesome.com/57035f1d97.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">16:28</span>
@@ -24,37 +25,37 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <a href="index.html"><i class="fas fa-arrow-left fa-2x"></i></a>
+        <a href="index.html" class="header__back-btn"
+          ><i class="fas fa-arrow-left"></i
+        ></a>
         <h1 class="header__title">Best Friend</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <div class="header__icon">
+        <span class="header__icon">
           <i class="fas fa-bars"></i>
-        </div>
+        </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
-        <span class="chat__titmestamp">Wednesday, February 19, 2020</span>
+        <span class="chat__timestamp">Wednesday, February 19, 2020</span>
         <li class="incoming-message message">
           <img src="images/avatar.png" class="g-avatar message__avatar" />
           <div class="message__content">
             <span class="message__author">Best Friend</span>
-            <div class="message__bubble">
+            <span class="message__bubble">
               Hi? What is this?
-            </div>
+            </span>
           </div>
-          <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
-          <span class="message__timestamp"></span>
+        <li class="sent-message message">
           <div class="message__content">
-            <div class="message__bubble">
+            <span class="message__bubble">
               This is borajin's Kakao Clone !
-            </div>
+            </span>
           </div>
         </li>
       </ul>
